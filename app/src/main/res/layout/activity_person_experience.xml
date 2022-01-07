@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".person_experience">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingStart="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Details" />
+
+    //////////////
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Experience"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/parent_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Job Title"
+                android:textColor="@color/blacktext"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/jobtitlelay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/titleauto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/typetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Job Type"
+                android:textColor="@color/blacktext"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/jobtypelay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/jobtypespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/gradient_spinner"
+                    android:spinnerMode="dialog" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Company Name"
+                android:textColor="@color/blacktext"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/companynamelay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/companynameauto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/gradient_spinner" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Company Type"
+                android:textColor="@color/blacktext"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/companytypelay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/company_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/gradient_spinner"
+                    android:spinnerMode="dialog">
+                </androidx.appcompat.widget.AppCompatSpinner>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Company Location"
+                android:textColor="@color/blacktext"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/companyloclay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/companylocauto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/gradient_spinner" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:id="@+id/mcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="I currently work here"/>
+
+
+
+
+//////////////////////////
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/starttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Start Date"
+                    android:textColor="@color/blacktext"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/endtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="End Date"
+                    android:textColor="@color/blacktext"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toStartOf="@+id/endlay"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/startlay"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/starttext">
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/startdate"
+                     android:layout_width="120dp"
+                     android:layout_height="50dp"
+                     android:focusableInTouchMode="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/endlay"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/startlay"
+                    app:layout_constraintTop_toBottomOf="@+id/endtext">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enddate"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:focusableInTouchMode="false"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Total Experience (In Years)"
+                android:textColor="@color/blacktext"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/totalexplay"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/total_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="numberDecimal">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/savebtn"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:text="Save"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

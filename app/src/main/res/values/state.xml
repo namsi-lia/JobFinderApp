@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="state">
+        <item>Lamu</item>
+        <item>Mombasa</item>
+        <item>Voi</item>
+        <item>Chuka</item>
+        <item>Dandora</item>
+        <item>Busia</item>
+        <item>Kisumu</item>
+        <item>Nairobi</item>
+        <item>Naivasha</item>
+        <item>Vihiga</item>
+        <item>Meru</item>
+        <item>Eldoret</item>
+        <item>Kakamega</item>
+        <item>Kisii</item>
+        <item>Nakuru</item>
+        <item>Embu</item>
+        <item>Mtwapa</item>
+        <item>Kilifi</item>
+        <item>Malindi</item>
+        <item>Tana River</item>
+        <item>Nyeri</item>
+        <item>Thika</item>
+        <item>Machakos</item>
+        <item>Kitui</item>
+        <item>Kiambu</item>
+        <item>Bungoma</item>
+        <item>Homa Bay</item>
+        <item>Diani</item>
+        <item>Kirinyaga</item>
+        <item>Nyali</item>
+        <item>Nyari</item>
+        <item>karatina</item>
+        <item>Kerugoya</item>
+        <item>Kikuyu</item>
+        <item>Kilimani</item>
+        <item>Upper Hill</item>
+        <item>Ruaka</item>
+        <item>Ruai</item>
+        <item>Langata</item>
+        <item>Rongai</item>
+        <item>Ngong Road</item>
+        <item>Parklands</item>
+        <item>Westlands</item>
+        <item>Mombasa Road</item>
+        <item>South C</item>
+        <item>South B</item>
+        <item>Hurlingham</item>
+    </string-array>
+</resources>

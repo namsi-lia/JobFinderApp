@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Apply For Jobs</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="title_activity_test">Test</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+</resources>

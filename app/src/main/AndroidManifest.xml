@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jobfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Apply For Jobs"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.jobfinder.show_skills"></activity>
+        <activity android:name="com.example.jobfinder.card_applied_jobs" />
+        <activity android:name="com.example.jobfinder.show_applied_jobs" />
+        <activity android:name="com.example.jobfinder.card_edu" />
+        <activity android:name="com.example.jobfinder.show_edu_detail" />
+        <activity android:name="com.example.jobfinder.resume_upload" />
+        <activity android:name="com.example.jobfinder.splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.jobfinder.card_exp" />
+        <activity android:name="com.example.jobfinder.Show_exp_details" />
+        <activity
+            android:name="com.example.jobfinder.Test"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.jobfinder.applyjob" />
+        <activity android:name="com.example.jobfinder.Homepage" />
+        <activity android:name="com.example.jobfinder.skills" />
+        <activity android:name="com.example.jobfinder.person_experience" />
+        <activity android:name="com.example.jobfinder.person_education" />
+        <activity android:name="com.example.jobfinder.person_details" />
+        <activity android:name="com.example.jobfinder.Signup_page" />
+        <activity android:name="com.example.jobfinder.MainActivity" />
+        <activity android:name="com.example.jobfinder.show_personal_details" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
